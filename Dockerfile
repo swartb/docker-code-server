@@ -11,13 +11,14 @@ LABEL maintainer="aptalca"
 ENV HOME="/config"
 
 RUN \
+  DEBIAN_FRONTEND="noninteractive" \
   echo "**** install node repo ****" && \
   curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
   echo 'deb https://deb.nodesource.com/node_14.x focal main' \
     > /etc/apt/sources.list.d/nodesource.list && \
   echo "**** install build dependencies ****" && \
   apt-get update && \
-  apt-get install -y \
+  DEBIAN_FRONTEND="noninteractive" apt-get install -y \
     build-essential \
     nodejs && \
   echo "**** install runtime dependencies ****" && \
