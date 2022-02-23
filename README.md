@@ -10,7 +10,7 @@ Fork of https://github.com/linuxserver/docker-code-server
     
 ## Environment variables:
 |Name|Description|
-|-|-|
+|:-|:-|
 |PASSWORD|password|
 |SERVER_PORT|listening port|
 |SSL_ENABLED|boolean|
