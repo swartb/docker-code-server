@@ -36,9 +36,9 @@ fi
 exec \
     s6-setuidgid abc \
         /app/code-server/bin/code-server \
-            --bind-addr 0.0.0.0:${CODE_SERVER_PORT}
             ${SSL_CERT_COMMAND} ${SSL_CERT_FILE} \
 			${SSL_KEY_COMMAND} ${SSL_KEY_FILE} \
+            --bind-addr 0.0.0.0:${CODE_SERVER_PORT}
             --user-data-dir /config/data \
             --extensions-dir /config/extensions \
             --disable-telemetry \
