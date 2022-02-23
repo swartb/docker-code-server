@@ -8,7 +8,7 @@ Fork of https://github.com/linuxserver/docker-code-server
     (untested at this moment)
     
     
-##Environment variables:
+## Environment variables:
 |-|-|
 |PASSWORD|password|
 |SERVER_PORT|listening port|
