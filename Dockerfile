@@ -55,11 +55,7 @@ RUN \
     /tmp/* \
     /var/lib/apt/lists/* \
     /var/tmp/* \
-    /etc/apt/sources.list.d/nodesource.list \
-    curl -o powershell721.deb -L "https://github.com/PowerShell/PowerShell/releases/download/v7.2.1/powershell-lts_7.2.1-1.deb_amd64.deb" \
-    apt install -y libicu66 \
-    dpkg -i powershell721.deb \
-    rm powershell721.deb
+    /etc/apt/sources.list.d/nodesource.list 
 
 # add local files
 COPY /root /
