@@ -1,6 +1,11 @@
 # code-server-custom
 
+This project is just for experimenting with docker :)
+
 Fork of https://github.com/linuxserver/docker-code-server
+
+2022.02.24
+  - added powershell
 
 2022.02.23
   - changed portnumber for the webinterface
